@@ -6,10 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="assets/style/style.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
 </head>
 <body>
-    
+    <section class="grid-container">
+        <h1 class="header">Weather Dashboard</h1>
+        <aside class="city-search">
+            <h3>Search for a City:</h3>
+            <form>
+                <input id='search-box' type="text">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </form>
+            <ul class="recent-cities">
 
+            </ul>
+        </aside>
+        <section class="city-main-card">
+            <h2 class="city-name city-desc">City Name</h2>
+            <p class="city-desc">Temperature: </p>
+            <p class="city-desc">Humidity: </p>
+            <p class="city-desc">Wind Speed: </p>
+            <p class="city-desc">UV Index: </p>
+
+        </section>
+        <section class="five-day-forecast"></section>
+    </section>
+    
     <script src="assets/js/script.js"></script>
 </body>
 </html>
