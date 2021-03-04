@@ -35,6 +35,7 @@
     grid-area: city-main-card;
     border: #333 0.5px solid;
     margin: 5px;
+    font-size: 1.5rem;
 }
   
 .five-day-forecast { 
