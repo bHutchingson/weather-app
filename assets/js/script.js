@@ -56,7 +56,7 @@ async function fetchApi(event) {
 
             var forecastUrl = 'https://api.openweathermap.org/data/2.5/onecall?lat='+lat+'&lon='+lon+'&units=imperial&appid=063552986ee031d6d3caec81e75eaa5b'
         
-            fetch(forecastUrl)
+            /* fetch(forecastUrl)
                 .then(response => response.json())
                 .then(data => {
                     console.log(data);
@@ -78,7 +78,7 @@ async function fetchApi(event) {
 
 
                     }
-                });
+                }); */
             
                     
             });
