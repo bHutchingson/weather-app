@@ -85,18 +85,59 @@ async function fetchApi(event) {
 
             let fiveDayForecast = 'https://api.openweathermap.org/data/2.5/forecast?q='+location+'&units=imperial&appid=0ecab4d27a41d8e0ccd885f7bc5922d7'
 
+            //element id's for card 1
             const date1 = document.querySelector('.date1');
             const temp1 = document.querySelector('.temp1');
             const humidity1 = document.querySelector('.humidity1');
+
+            //element id's for card 2
+            const date2 = document.querySelector('.date2');
+            const temp2 = document.querySelector('.temp2');
+            const humidity2 = document.querySelector('.humidity2');
+
+            //element id's for card 3
+            const date3 = document.querySelector('.date3');
+            const temp3 = document.querySelector('.temp3');
+            const humidity3 = document.querySelector('.humidity3');
+
+            //element id's for card 4
+            const date4 = document.querySelector('.date4');
+            const temp4 = document.querySelector('.temp4');
+            const humidity4 = document.querySelector('.humidity4');
+
+            //element id's for card 5
+            const date5 = document.querySelector('.date5');
+            const temp5 = document.querySelector('.temp5');
+            const humidity5 = document.querySelector('.humidity5');
       
             fetch(fiveDayForecast)
                 .then(response => response.json())
                 .then(data => {
                     console.log(data)
-                    // day one of 5 day forecast
+                    // day one
                     date1.textContent = (moment().add(1, 'days').format('MM-DD-YYYY'));
                     temp1.textContent = ('Temp: ' + data.list[0].main.temp + ' ℉')
                     humidity1.textContent = ('Humidity ' + data.list[0].main.humidity + '%')
+
+                    // day two
+                    date2.textContent = (moment().add(1, 'days').format('MM-DD-YYYY'));
+                    temp2.textContent = ('Temp: ' + data.list[0].main.temp + ' ℉')
+                    humidity2.textContent = ('Humidity ' + data.list[0].main.humidity + '%')
+
+                    // day three
+                    date3.textContent = (moment().add(1, 'days').format('MM-DD-YYYY'));
+                    temp3.textContent = ('Temp: ' + data.list[0].main.temp + ' ℉')
+                    humidity3.textContent = ('Humidity ' + data.list[0].main.humidity + '%')
+
+                    // day four
+                    date4.textContent = (moment().add(1, 'days').format('MM-DD-YYYY'));
+                    temp4.textContent = ('Temp: ' + data.list[0].main.temp + ' ℉')
+                    humidity4.textContent = ('Humidity ' + data.list[0].main.humidity + '%')
+
+                    // day five
+                    date5.textContent = (moment().add(1, 'days').format('MM-DD-YYYY'));
+                    temp5.textContent = ('Temp: ' + data.list[0].main.temp + ' ℉')
+                    humidity5.textContent = ('Humidity ' + data.list[0].main.humidity + '%')
                 });
 
 
