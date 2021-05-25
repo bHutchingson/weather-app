@@ -116,28 +116,28 @@ async function fetchApi(event) {
                     console.log(data)
                     // day one
                     date1.textContent = (moment().add(1, 'days').format('MM-DD-YYYY'));
-                    temp1.textContent = ('Temp: ' + data.list[0].main.temp + ' ℉')
-                    humidity1.textContent = ('Humidity ' + data.list[0].main.humidity + '%')
+                    temp1.textContent = ('Temperature: ' + data.list[0].main.temp + ' ℉')
+                    humidity1.textContent = ('Humidity: ' + data.list[0].main.humidity + '%')
 
                     // day two
                     date2.textContent = (moment().add(1, 'days').format('MM-DD-YYYY'));
-                    temp2.textContent = ('Temp: ' + data.list[0].main.temp + ' ℉')
-                    humidity2.textContent = ('Humidity ' + data.list[0].main.humidity + '%')
+                    temp2.textContent = ('Temperature: ' + data.list[1].main.temp + ' ℉')
+                    humidity2.textContent = ('Humidity: ' + data.list[1].main.humidity + '%')
 
                     // day three
                     date3.textContent = (moment().add(1, 'days').format('MM-DD-YYYY'));
-                    temp3.textContent = ('Temp: ' + data.list[0].main.temp + ' ℉')
-                    humidity3.textContent = ('Humidity ' + data.list[0].main.humidity + '%')
+                    temp3.textContent = ('Temperature: ' + data.list[2].main.temp + ' ℉')
+                    humidity3.textContent = ('Humidity: ' + data.list[2].main.humidity + '%')
 
                     // day four
                     date4.textContent = (moment().add(1, 'days').format('MM-DD-YYYY'));
-                    temp4.textContent = ('Temp: ' + data.list[0].main.temp + ' ℉')
-                    humidity4.textContent = ('Humidity ' + data.list[0].main.humidity + '%')
+                    temp4.textContent = ('Temperature: ' + data.list[3].main.temp + ' ℉')
+                    humidity4.textContent = ('Humidity: ' + data.list[3].main.humidity + '%')
 
                     // day five
                     date5.textContent = (moment().add(1, 'days').format('MM-DD-YYYY'));
-                    temp5.textContent = ('Temp: ' + data.list[0].main.temp + ' ℉')
-                    humidity5.textContent = ('Humidity ' + data.list[0].main.humidity + '%')
+                    temp5.textContent = ('Temperature: ' + data.list[4].main.temp + ' ℉')
+                    humidity5.textContent = ('Humidity: ' + data.list[4].main.humidity + '%')
                 });
 
 
